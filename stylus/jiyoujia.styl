@@ -1,0 +1,328 @@
+bordercolor = rgb(233,233,233)
+bor = border 1px solid red
+b = rgb(255,255,255)
+.sort-inner
+	width 1190px
+	height 41px
+	border 1px solid rgb(232,232,232)
+	margin 0 auto
+	position relative
+	color rgb(109,109,109)
+	font-size 14px
+	.ajax-all
+		float left
+		line-height 41px
+		.link
+			float left
+			width 87px
+			height 40px
+			text-align center
+			border 1px solid transparent
+		.addclass
+			color rgb(255,68,0)
+			border 1px solid rgb(233,233,233)
+	.input
+		margin-top -1px
+		margin-left 10px
+		height 40px
+		float left
+		.inner
+			width 190px
+			height 40px
+			padding 10px 0 10px 10px
+			list-style none
+			border 1px solid transparent
+			li:nth-of-type(2)
+				padding 4px 2px 0px 2px
+				height 40px
+			li
+				float left
+				input
+					padding 0 4px
+					height 23px
+				input.sortinput
+					border 1px solid bordercolor
+					width 55px
+				.sure
+					width 42px
+					display none
+					margin-left 10px
+					border-radius 2px
+					background-color rgb(255,68,0)
+					color white
+			&:hover
+				height 41px
+				border 1px solid rgb(204,204,204)
+				box-shadow 0 0 4px 0.05px rgb(180,180,180)
+			&:hover .sure
+				display block
+	.left
+		position absolute
+		right 0
+		width 280px
+		height 40px
+		.leftban>a
+			float left
+			display inline-block
+		.place
+			float left
+			width 89px
+			height 39px
+			border 1px solid transparent
+			position relative
+			.over
+				position absolute
+				margin-top -4px
+				width 87px
+				height 6px
+				background transparent
+				z-index 11
+			&:hover .over
+				background white
+			.text
+				width 89px
+				height 40px
+				line-height 40px
+				text-align center
+				display inline-block
+			.address
+				background white
+				position absolute
+				z-index 10
+				display none
+				margin-top -2px
+				margin-left -1px
+				width 320px
+				padding 10px
+				border 1px solid rgb(204,204,204)
+				font-size 12px
+				float left
+				.cancel
+					display none
+					margin-bottom 5px
+					color white
+					width 66px
+					height 20px
+					border-radius 2px
+					background-color rgb(255,68,0)
+				.samecity
+					font-weight bolder
+				.first
+					padding-bottom 10px
+					width 300px
+					border-bottom 1px dotted rgb(224,224,224)
+					margin-top 10px
+					line-height 20px
+					float left
+					a
+						float left
+						width 60px 
+						height 16px
+				.second
+					padding-bottom 10px
+					width 300px
+					border-bottom 1px dotted rgb(224,224,224)
+					margin-top 10px
+					line-height 20px
+					float left
+					a
+						float left
+						width 50px 
+						height 16px
+				.third
+					padding-bottom 10px
+					width 300px
+					margin-top 10px
+					float left
+					a
+						float left
+						width 50px 
+						height 16px
+				.seacher
+					border 1px solid rgb(180,180,180)
+					height 20px
+					float left
+				.sure
+					width 42px
+					height 20px
+					margin-left 5px
+					border-radius 2px
+					background-color rgb(255,68,0)
+					color white
+					float left
+			.icon
+				margin-left 5px
+				display inline-block
+				font-family iconfont 
+				transform rotate(90deg)
+			&:hover .icon
+				animation test 0.2s linear
+				animation-fill-mode forwards
+				// transform rotate(270deg)
+			&:hover .address
+				display block
+			&:hover
+				border 1px solid rgb(204,204,204)
+		.left
+			float left
+		.icon-hover
+			display inline-block
+			width 40px
+			height 40px
+			border-right 1px solid bordercolor
+			img
+				width 38px
+				height 38px
+		.icon-tag
+			display inline-block
+			width 40px
+			height 40px
+			text-align center
+			border-right 1px solid bordercolor
+			padding-top 15px
+			.line
+				width 14px
+				height 2px
+				background rgb(153,153,153)
+				margin 0 auto 2px
+			&:hover .line
+				background rgb(255,68,0)
+		.item
+			width 105px
+			height 40px
+			line-height 40px
+			display inline-block
+			text-align center
+			a
+			span
+				display inline-block
+			a.icon
+				font-family iconfont
+				width 20px 
+			a:nth-of-type(2):hover
+				color rgb(255,68,0)
+			.current
+				width 20px
+				color rgb(255,68,0)
+			.liitem
+				width 20px
+@keyframes test
+	to
+		transform rotate(270deg)
+.main
+	width 1190px
+	height 400px
+	float left
+	.itemMouse
+		width 220px
+		height 350px
+		margin 10px 10px 0 0
+		overflow hidden
+		display inline-block
+		border 1px solid transparent
+		.img
+			width 220px
+			height 220px
+			position relative
+			z-index 1
+			.report
+				width 16px
+				height 16px
+				display none
+				position absolute
+				right 0
+				top -1px
+				z-index 2
+			.itemImg
+				width 220px
+				height 220px
+			.slide
+				position absolute
+				bottom -25px
+				z-index 2
+				width 220px
+				background rgba(255,68,0,0.8)
+				height 25px
+				transition bottom 0.1s linear
+				span
+					display inline-block
+					width 109px
+					text-align center
+					line-height 25px
+				span.similar
+					border-right 1px solid rgba(255,255,255,0.5)
+					color rgba(251,161,135,1)
+				span.same
+					color white
+			&:hover .slide
+					bottom 0
+			&:hover .report
+					display block
+		&:hover
+			border 1px solid rgb(255,68,0)
+	.bottom
+		position relative
+		background white
+		width 220px
+		padding 10px 5px
+		z-index 3
+		.price
+			width 204px
+			margin-top 5px
+			position relative
+			.rmb
+				font-size 18px
+				color rgb(255,68,0)
+			.money
+				font-size 20px
+				color rgb(255,68,0)
+			.sold
+				line-height 22px
+				font-size 12px
+				position absolute
+				right 0px
+		.text
+			width 204px
+			margin-top 5px
+			font-size 12px
+			line-height 14px
+			over-flow auto
+		.detail
+			text-align 12px
+			font-size 12px
+			position relative
+			margin-top 5px
+			width 204px
+			float left
+			.detailImg
+				float left
+			.shopper
+				text-decoration underline
+				float left
+				padding-top 2px
+				&:hover
+					color rgb(255,68,0)
+			.shopad
+				position absolute
+				line-height 16px
+				right 0	
+		ul
+			list-style none
+			float left
+			height 20px
+			margin-top 5px
+			li
+				float left
+				width 20px
+			
+					
+
+
+
+
+
+
+
+
+
+
